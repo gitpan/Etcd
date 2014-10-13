@@ -1,5 +1,5 @@
 package Etcd::Keys;
-$Etcd::Keys::VERSION = '0.001';
+$Etcd::Keys::VERSION = '0.002';
 use namespace::sweep;
 
 use Etcd::Response;
@@ -111,7 +111,7 @@ Etcd::Keys - etcd key space API
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 SYNOPSIS
 
@@ -299,6 +299,8 @@ This invokes the C<POST> method for the given key.
 =item *
 
 C<watch>
+
+    $etcd->watch("/message");
 
 Block until the given key changes, then return the change.
 

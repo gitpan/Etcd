@@ -1,5 +1,5 @@
 package Etcd::Error;
-$Etcd::Error::VERSION = '0.001';
+$Etcd::Error::VERSION = '0.002';
 use namespace::sweep;
 
 use JSON qw(decode_json);
@@ -40,7 +40,7 @@ Etcd::Error - API error representation
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 SYNOPSIS
 

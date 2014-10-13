@@ -1,5 +1,5 @@
 package Etcd::Node;
-$Etcd::Node::VERSION = '0.001';
+$Etcd::Node::VERSION = '0.002';
 use namespace::sweep;
 
 use Moo;
@@ -45,7 +45,7 @@ Etcd::Node - key space node representation
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 SYNOPSIS
 

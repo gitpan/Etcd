@@ -1,5 +1,5 @@
 package Etcd;
-$Etcd::VERSION = '0.001';
+$Etcd::VERSION = '0.002';
 # ABSTRACT: Client library for etcd
 
 use namespace::sweep;
@@ -40,6 +40,8 @@ sub _prep_url {
 sub api_exec {
     my ($self, $path, $method, %args) = @_;
     my $res = $self->http->request($method, $self->_prep_url($path, %args));
+    $res = $self->http->request($method, $res->{headers}->{location})
+        if $res && $res->{status} eq 307;
     return $res if $res->{success};
     croak "$res->{status} $res->{reason}: $res->{content}" if $res->{status} >= 500;
     require Etcd::Error;
@@ -69,7 +71,7 @@ Etcd - Client library for etcd
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 SYNOPSIS
 
@@ -151,7 +153,7 @@ L<Etcd::Keys> - Key space API
 
 =item *
 
-L<Etcd::Keys> - Stats API
+L<Etcd::Stats> - Stats API
 
 =back
 
@@ -197,6 +199,10 @@ L<https://github.com/robn/p5-etcd>
 =item *
 
 Robert Norris <rob@eatenbyagrue.org>
+
+=item *
+
+Matt Harrington
 
 =back
 

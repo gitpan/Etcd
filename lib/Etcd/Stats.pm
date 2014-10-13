@@ -1,5 +1,5 @@
 package Etcd::Stats;
-$Etcd::Stats::VERSION = '0.001';
+$Etcd::Stats::VERSION = '0.002';
 use namespace::sweep;
 
 use JSON qw(decode_json);
@@ -36,7 +36,7 @@ Etcd::Stats - etcd stats API
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 SYNOPSIS
 
@@ -45,7 +45,7 @@ version 0.001
     
     my $leader_stats = $etcd->stats("leader");
     
-    my $store_stats = $etcd->stats("leader");
+    my $store_stats = $etcd->stats("store");
     
     my $self_stats = $etcd->stats("self");
 
@@ -63,7 +63,7 @@ C<stats>
 
     my $leader_stats = $etcd->stats("leader");
 
-    my $store_stats = $etcd->stats("leader");
+    my $store_stats = $etcd->stats("store");
 
     my $self_stats = $etcd->stats("self");
 
