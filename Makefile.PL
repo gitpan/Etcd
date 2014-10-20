@@ -21,7 +21,7 @@ my %WriteMakefileArgs = (
   "NAME" => "Etcd",
   "PREREQ_PM" => {
     "Carp" => 0,
-    "HTTP::Tiny" => 0,
+    "HTTP::Tiny" => "0.014",
     "JSON" => 0,
     "Moo" => 0,
     "Scalar::Util" => 0,
@@ -35,7 +35,7 @@ my %WriteMakefileArgs = (
   "TEST_REQUIRES" => {
     "Test::More" => 0
   },
-  "VERSION" => "0.002",
+  "VERSION" => "0.003",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -44,7 +44,7 @@ my %WriteMakefileArgs = (
 
 my %FallbackPrereqs = (
   "Carp" => 0,
-  "HTTP::Tiny" => 0,
+  "HTTP::Tiny" => "0.014",
   "JSON" => 0,
   "Moo" => 0,
   "Scalar::Util" => 0,

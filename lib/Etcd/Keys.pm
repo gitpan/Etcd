@@ -1,5 +1,5 @@
 package Etcd::Keys;
-$Etcd::Keys::VERSION = '0.002';
+$Etcd::Keys::VERSION = '0.003';
 use namespace::sweep;
 
 use Etcd::Response;
@@ -111,7 +111,7 @@ Etcd::Keys - etcd key space API
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 SYNOPSIS
 

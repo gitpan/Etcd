@@ -16,3 +16,4 @@ t/00-load.t
 t/10-read.t
 t/11-write.t
 t/12-redirects.t
+t/13-type-coercion.t

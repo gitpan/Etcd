@@ -1,5 +1,5 @@
 package Etcd::Response;
-$Etcd::Response::VERSION = '0.002';
+$Etcd::Response::VERSION = '0.003';
 use namespace::sweep;
 
 use Etcd::Node;
@@ -41,7 +41,7 @@ Etcd::Response - response from key space API
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 SYNOPSIS
 

@@ -1,5 +1,5 @@
 package Etcd::Stats;
-$Etcd::Stats::VERSION = '0.002';
+$Etcd::Stats::VERSION = '0.003';
 use namespace::sweep;
 
 use JSON qw(decode_json);
@@ -36,7 +36,7 @@ Etcd::Stats - etcd stats API
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 SYNOPSIS
 

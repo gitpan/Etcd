@@ -15,7 +15,7 @@ meta-spec:
 name: Etcd
 requires:
   Carp: '0'
-  HTTP::Tiny: '0'
+  HTTP::Tiny: '0.014'
   JSON: '0'
   Moo: '0'
   Scalar::Util: '0'
@@ -28,4 +28,4 @@ requires:
 resources:
   bugtracker: https://github.com/robn/p5-etcd/issues
   repository: git://github.com/robn/p5-etcd.git
-version: '0.002'
+version: '0.003'

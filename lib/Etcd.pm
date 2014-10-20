@@ -1,10 +1,10 @@
 package Etcd;
-$Etcd::VERSION = '0.002';
+$Etcd::VERSION = '0.003';
 # ABSTRACT: Client library for etcd
 
 use namespace::sweep;
 
-use HTTP::Tiny;
+use HTTP::Tiny 0.014;
 use URI::Escape qw(uri_escape);
 use Carp qw(croak);
 
@@ -71,7 +71,7 @@ Etcd - Client library for etcd
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 SYNOPSIS
 
